@@ -69,28 +69,28 @@ const Input = ({ modal, toggle, title }) => {
     return (
         <Modal isOpen={modal} toggle={toggle}>
             <form onSubmit={handleSave}>
-                <ModalHeader toggle={toggle}><b>{title}</b></ModalHeader>
+                <ModalHeader style={{backgroundColor : "#5655C6"}} toggle={toggle}><b>{title}</b></ModalHeader>
                 <ModalBody>
 
                     <div className="form-group">
                         <label><b>Task</b></label>
                         <input type="text" className="form-control" value={task} onChange={handleChange} name="task" required />
                     </div>
-                    <div className="form-group d-flex mt-3">
+                    <div className="timeContainer form-group">
                         <div>
                             <label className='d-block'><b>From</b></label>
                             <input type="time" className="form-control" value={fromTime} onChange={handleChange} name="fromTime" required></input>
-                            <div className='btn btn-secondary rounded-circle mx-3' onClick={() => { setFM(!fm) }}>{fm ? "AM" : "PM"}</div>
+                            <div className='btn' onClick={() => { setFM(!fm) }}>{fm ? "AM" : "PM"}</div>
                         </div>
                         <div className='mx-5'>
                             <label className='d-block'><b>To</b></label>
                             <input type="time" className="form-control" value={toTime} onChange={handleChange} name="toTime" required></input>
-                            <div className='btn btn-secondary rounded-circle mx-3' onClick={() => { setTM(!tm) }}>{tm ? "AM" : "PM"}</div>
+                            <div className='btn' onClick={() => { setTM(!tm) }}>{tm ? "AM" : "PM"}</div>
                         </div>
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color='primary' type='submit'>ADD</Button>{' '}
+                    <Button style={{backgroundColor:"#5655C6"}} className='subbtn' type='submit'>ADD</Button>{' '}
                     <Button color="secondary" onClick={toggle}>Cancel</Button>
                 </ModalFooter>
             </form>
