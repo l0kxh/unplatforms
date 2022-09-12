@@ -1,0 +1,48 @@
+.todoItemContainer{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #FBFBFB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoItemHead{
+    padding: 10px;
+}
+
+.todoItemTitle{
+    margin-bottom: 8px;
+}
+
+.todoItemTime{
+    font-size: small;
+    color: #888888;
+}
+
+.todoEdit{
+    padding-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.todoItemContainer:hover .todoEdit{
+    display: inline;
+}
+
+.popup{
+    list-style: none;
+    position: absolute;
+    background-color: #FBFBFB;  
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+.popupItem{
+    padding: 10px;
+    width: 147px;   
+    border-bottom: 1px solid grey;
+}
+.popupItem:hover{
+    background-color: rgba(88, 88, 88, 0.3);
+}

@@ -1,0 +1,22 @@
+.app {
+  display: grid;
+  place-items: center;
+  margin-top: 70px;
+}
+
+.appcontainer{
+  display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+  .appcontainer{
+    display:grid;
+  }
+}
+
+.divider{
+  height: 1px;
+  width: 100%;
+  background-color: #888888;
+  margin-bottom: 50px;
+}

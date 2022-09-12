@@ -1,0 +1,48 @@
+.todoContainer {
+    margin-left: 12px;
+    margin-left: 12px;
+    padding: 8px 8px 3px 8px;
+    width: 300px;
+    background-color: #5655C6;
+    border-radius: 6px;
+}
+.todoHead{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color : #FBFBFB
+}
+.todoTitle{
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: "500";
+}
+.AddButtonContainer{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.AddButton {
+    background-color: #888888;
+    padding: 1px 10px 5px 10px;
+    font-size: x-large;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.AddButton:hover {
+    background-color: #777777;
+}
+
+.action{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+    .todoContainer {
+        width: 300px;
+    }
+}
