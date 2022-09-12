@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "root",
-    "password": "Pilli@0101",
-    "database": "todolistdb",
-    "host": "127.0.0.1",
+    "username": "sql6519103",
+    "password": "53SDBLzZcp",
+    "database": "sql6519103",
+    "host": "sql6.freesqldatabase.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
+    "username": "sql6519103",
     "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "database": "sql6519103",
+    "host": "sql6.freesqldatabase.com",
     "dialect": "mysql"
   },
   "production": {

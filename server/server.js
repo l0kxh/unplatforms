@@ -20,6 +20,6 @@ app.use("/done", doneRouter);
 
 db.sequelize.sync().then(() => {
     app.listen(4000, () => {
-        console.log("server is running on 4000")
+        console.log("server is running on 3306")
     });
 });
